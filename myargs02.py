@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+# loading the module
+import argparse
+
+# creating the parser
+parser = argparse.ArgumentParser()
