@@ -13,3 +13,5 @@ parser.add_argument('second')
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
+
+print(f'{first} {op} {second} = {result}')
