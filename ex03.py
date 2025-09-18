@@ -14,4 +14,11 @@ parser.add_argument('second')
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
 
-print(f'{first} {op} {second} = {result}')
+if args.op == '+':
+    result = args.first + args.second
+elif args.op == '-':
+    result = args.first - args.second
+else:
+    result = f'(Unknown operator {args.op})'
+
+print(f'{args.first} {args.op} {args.second} = {result}')
