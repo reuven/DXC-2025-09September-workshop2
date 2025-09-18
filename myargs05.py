@@ -12,11 +12,6 @@ parser.add_argument('filename')
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
 
-if args.op == '+':
-    result = args.first + args.second
-elif args.op == '-':
-    result = args.first - args.second
-else:
-    result = f'(Unknown operator {args.op})'
-
-print(f'{args.first} {args.op} {args.second} = {result}')
+with open(args.filename) as f:
+    for one_line in f:
+        print(len(one_line), end=' ')
