@@ -13,5 +13,7 @@ parser.add_argument('age')
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
 
-# grab the names via attributes on "args"
-print(f'Hello, {args.name} from {args.company}!')
+print(args)
+
+# # grab the names via attributes on "args"
+# print(f'Hello, {args.name} from {args.company}!')
