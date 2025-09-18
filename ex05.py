@@ -7,7 +7,8 @@ import argparse
 parser = argparse.ArgumentParser(description='Our wc version')
 
 # add argument for filename
-parser.add_argument('-f', '--file', type=argparse.FileType('r'), required=True)
+parser.add_argument('-f', '--file', type=argparse.FileType('r'), required=True,
+                    help='Name of the file we want to count')
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
