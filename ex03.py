@@ -14,6 +14,8 @@ parser.add_argument('second', type=float)
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
 
+# first, op, second = args.first, args.op, args.second
+
 if args.op == '+':
     result = args.first + args.second
 elif args.op == '-':
