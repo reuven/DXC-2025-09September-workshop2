@@ -8,7 +8,8 @@ import argparse
 parser = argparse.ArgumentParser(description='Reverse lines of a file')
 
 # add arguments for name and company
-parser.add_argument('-1', '--first', type=int, help='First number', required=True)
+parser.add_argument('-i', '--infilename', type=argparse.FileType('r'),
+                    help='Input file', required=True)
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
