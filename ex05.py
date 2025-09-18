@@ -17,8 +17,8 @@ counts = {'lines':0,
           'words':0,
           'chars':0}
 
-with args.file:
-    for one_line in args.file:
+with args.file as f:
+    for one_line in f:
         counts['lines'] += 1
         counts['chars'] += len(one_line)          # count characters in the line
         counts['words'] += len(one_line.split())  # break the line into words, and count them
