@@ -7,8 +7,8 @@ import argparse
 parser = argparse.ArgumentParser(description='Simple calculator program')
 
 # add arguments for name and company
-parser.add_argument('-1', '--first', type=int, help='First number')
-parser.add_argument('-o', '--op', help='Operator')
+parser.add_argument('-1', '--first', type=int, help='First number', required=True)
+parser.add_argument('-o', '--op', help='Operator', required=True)
 parser.add_argument('-2', '--second', type=int, default=10, help='Second number')
 
 # parse the arguments, putting them into a new namespace
