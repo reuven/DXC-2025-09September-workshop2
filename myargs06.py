@@ -7,11 +7,10 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # add arguments
-parser.add_argument('filename', type=file)
+parser.add_argument('file', type=file)
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
 
-with open(args.filename) as f:
-    for one_line in f:
-        print(len(one_line), end=' ')
+for one_line in args.file:
+    print(len(one_line), end=' ')
