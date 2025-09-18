@@ -12,6 +12,8 @@ parser.add_argument('files', nargs='*', type=argparse.FileType('r'))
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
 
+if not args.files)
+
 for one_file in args.files:
     outfilename = one_file.name + '.output'  # Get output filename
 
