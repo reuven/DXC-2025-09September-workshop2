@@ -7,9 +7,9 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # add arguments for name and company
-parser.add_argument('--first', type=int)
-parser.add_argument('--op')
-parser.add_argument('--second', type=int)
+parser.add_argument('-f', '--first', type=int)
+parser.add_argument('-o', '--op')
+parser.add_argument('-s', '--second', type=int)
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
