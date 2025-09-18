@@ -1,0 +1,29 @@
+3nohtyp vne/nib/rsu/!#
+
+eludom eht gnidaol #
+esrapgra tropmi
+
+resrap eht gnitaerc #
+)'enil dnammoc eht rof margorp rotaluclac elpmis A'=noitpircsed(resraPtnemugrA.esrapgra = resrap
+
+ynapmoc dna eman rof stnemugra dda #
+,taolf=epyt ,'tsrif'(tnemugra_dda.resrap
+)'noitaluclac ni desu eb ot rebmun tsriF'=pleh                    
+,'po'(tnemugra_dda.resrap
+)'srebmun eht ot deilppa eb ot rotarepO'=pleh                    
+,taolf=epyt ,'dnoces'(tnemugra_dda.resrap
+)'noitaluclac ni desu eb ot rebmun dnoceS'=pleh                    
+
+ecapseman wen a otni meht gnittup ,stnemugra eht esrap #
+)(sgra_esrap.resrap = sgra
+
+dnoces.sgra ,po.sgra ,tsrif.sgra = dnoces ,po ,tsrif #
+
+:'+' == po.sgra fi
+dnoces.sgra + tsrif.sgra = tluser    
+:'-' == po.sgra file
+dnoces.sgra - tsrif.sgra = tluser    
+:esle
+')}po.sgra{ rotarepo nwonknU('f = tluser    
+
+)'}tluser{ = }dnoces.sgra{ }po.sgra{ }tsrif.sgra{'f(tnirp
