@@ -11,3 +11,9 @@ parser.add_argument('files', nargs='*', type=argparse.FileType('r'))
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
+
+for one_file in args.files:
+    outfilename = one_file.name + '.output'  # Get output filename
+    with one_file as infile, open(outfilename, 'w') as outfile:
+        for one_line in infile:
+            outfile.write(one_line.rstrip()[::-1] + '\n')
