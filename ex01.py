@@ -5,3 +5,8 @@
 # 1. Write a command-line program that uses `sys.argv`.
 # 2. It expects to get two arguments, a person's name and their company name.
 # 3. It should print a greeting to the person using their company, too.
+
+import sys
+
+# tuple unpacking -- if sys.argv has 3 elements, it works great!
+program_name, person_name, company_name = sys.argv
