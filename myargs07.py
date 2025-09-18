@@ -7,10 +7,9 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # add arguments
-parser.add_argument('file', type=argparse.FileType('r'))
+parser.add_argument('text', nargs='*')
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
 
-for one_line in args.file:
-    print(len(one_line), end=' ')
+print(f'{args=}')
