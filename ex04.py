@@ -4,7 +4,7 @@
 import argparse
 
 # creating the parser
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description='Simple calculator program')
 
 # add arguments for name and company
 parser.add_argument('-1', '--first', type=int)
