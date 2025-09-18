@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser()
 # add arguments for name and company
 parser.add_argument('-1', '--first', type=int)
 parser.add_argument('-o', '--op')
-parser.add_argument('-2', '--second', type=int)
+parser.add_argument('-2', '--second', type=int, default=10)
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
