@@ -5,3 +5,7 @@ import argparse
 
 # creating the parser
 parser = argparse.ArgumentParser()
+
+# add arguments for name and company
+parser.add_argument('name')
+parser.add_argument('company')
