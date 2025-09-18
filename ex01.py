@@ -8,7 +8,11 @@
 
 import sys
 
-# tuple unpacking -- if sys.argv has 3 elements, it works great!
-program_name, person_name, company_name = sys.argv
+if len(sys.argv) != 3:
+    print(f'You need to provide 2 arguments, a person name and a company name')
 
-print(f'Hello, {person_name} from {company_name}!')
+else:
+    # tuple unpacking -- if sys.argv has 3 elements, it works great!
+    program_name, person_name, company_name = sys.argv
+
+    print(f'Hello, {person_name} from {company_name}!')
