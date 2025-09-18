@@ -4,7 +4,7 @@
 import argparse
 
 # creating the parser
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description='A simple calculator program for the command line'))
 
 # add arguments for name and company
 parser.add_argument('first', type=float,
