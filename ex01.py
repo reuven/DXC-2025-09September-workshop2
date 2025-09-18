@@ -10,3 +10,5 @@ import sys
 
 # tuple unpacking -- if sys.argv has 3 elements, it works great!
 program_name, person_name, company_name = sys.argv
+
+print(f'Hello, {person_name} from {company_name}!')
