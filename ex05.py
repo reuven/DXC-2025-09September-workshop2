@@ -22,5 +22,7 @@ for one_line in args.file:
     counts['chars'] += len(one_line)          # count characters in the line
     counts['words'] += len(one_line.split())  # break the line into words, and count them
 
+args.file.close()
+
 for key, value in counts.items():
     print(f'{key}:{value}')
