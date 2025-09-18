@@ -6,6 +6,9 @@ import argparse
 # creating the parser
 parser = argparse.ArgumentParser(description='Simple calculator program')
 
+
+
+
 # add arguments for name and company
 parser.add_argument('-1', '--first', type=int, help='First number', required=True)
 parser.add_argument('-o', '--op', help='Operator', required=True)
