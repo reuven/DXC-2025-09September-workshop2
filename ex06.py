@@ -15,3 +15,5 @@ parser.add_argument('-o', '--outfilename', type=argparse.FileType('w'),
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
+
+if args.outfilename is None:
