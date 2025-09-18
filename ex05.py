@@ -13,11 +13,14 @@ parser.add_argument('-f', '--file', type=argparse.FileType('r'), required=True,
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
 
-if args.op == '+':
-    result = args.first + args.second
-elif args.op == '-':
-    result = args.first - args.second
-else:
-    result = f'(Unknown operator {args.op})'
+counts = {'lines':0,
+          'words':0,
+          'chars':0}
 
-print(f'{args.first} {args.op} {args.second} = {result}')
+for one_line in args.file:
+    counts['lines'] += 1
+    counts['chars'] += len(one_line)          # count characters in the line
+    counts['words'] += len(one_line.split())  # break the line into words, and count them
+
+for key, value in counts.items():
+    print(f'{key}:{value}')
