@@ -15,5 +15,5 @@ args = parser.parse_args()
 
 print(args)
 
-# # grab the names via attributes on "args"
-# print(f'Hello, {args.name} from {args.company}!')
+# grab the names via attributes on "args"
+print(f'Hello, {args.name} from {args.company}!')
