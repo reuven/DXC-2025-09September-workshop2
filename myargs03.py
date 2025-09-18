@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 
 # add arguments for name and company
 parser.add_argument('name')
-parser.add_argument('age')
+parser.add_argument('age', type=int)
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
