@@ -8,11 +8,11 @@ parser = argparse.ArgumentParser()
 
 # add arguments for name and company
 parser.add_argument('first', type=float,
-                    description='First number to be used in calculation')
+                    help='First number to be used in calculation')
 parser.add_argument('op',
-                    description='Operator to be applied to the numbers')
+                    help='Operator to be applied to the numbers')
 parser.add_argument('second', type=float,
-                    description='Second number to be used in calculation')
+                    help='Second number to be used in calculation')
 
 # parse the arguments, putting them into a new namespace
 args = parser.parse_args()
