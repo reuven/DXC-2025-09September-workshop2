@@ -18,3 +18,10 @@ args = parser.parse_args()
 
 if args.outfile is None:
     args.outfile = open(f'{args.infile.name}.output', 'w')
+
+# now we know that we have both input and output files
+# now... we can read from infile and write to outfile
+
+with args.infile as i, args.outfile as o:
+    for one_line in i:
+        o.write(one_line)
