@@ -1,140 +1,141 @@
+
 ##
-# User Database
-# 
-# Note that this file is consulted directly only when the system is running
-# in single-user mode.  At other times this information is provided by
-# Open Directory.
+esabataD resU #
+ #
+gninnur si metsys eht nehw ylno yltcerid detlusnoc si elif siht taht etoN #
+yb dedivorp si noitamrofni siht semit rehto tA  .edom resu-elgnis ni #
+.yrotceriD nepO #
 #
-# See the opendirectoryd(8) man page for additional information about
-# Open Directory.
+tuoba noitamrofni lanoitidda rof egap nam )8(dyrotceridnepo eht eeS #
+.yrotceriD nepO #
 ##
-nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
-root:*:0:0:System Administrator:/var/root:/bin/sh
-daemon:*:1:1:System Services:/var/root:/usr/bin/false
-_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
-_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
-_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
-_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false
-_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false
-_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false
-_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false
-_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false
-_appstore:*:33:33:Mac App Store Service:/var/db/appstore:/usr/bin/false
-_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
-_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false
-_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false
-_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false
-_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false
-_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false
-_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false
-_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false
-_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false
-_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false
-_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false
-_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false
-_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false
-_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false
-_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false
-_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false
-_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false
-_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false
-_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false
-_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false
-_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false
-_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false
-_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false
-_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false
-_securityagent:*:92:92:SecurityAgent:/var/db/securityagent:/usr/bin/false
-_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false
-_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false
-_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false
-_installer:*:96:-2:Installer:/var/empty:/usr/bin/false
-_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false
-_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false
-_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false
-_softwareupdate:*:200:200:Software Update Service:/var/db/softwareupdate:/usr/bin/false
-_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false
-_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false
-_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false
-_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false
-_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false
-_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false
-_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
-_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
-_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
-_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
-_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false
-_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
-_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false
-_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false
-_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false
-_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false
-_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false
-_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false
-_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false
-_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false
-_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false
-_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
-_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false
-_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false
-_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false
-_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false
-_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
-_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
-_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false
-_iconservices:*:240:240:IconServices:/var/empty:/usr/bin/false
-_distnote:*:241:241:DistNote:/var/empty:/usr/bin/false
-_nsurlsessiond:*:242:242:NSURLSession Daemon:/var/db/nsurlsessiond:/usr/bin/false
-_displaypolicyd:*:244:244:Display Policy Daemon:/var/empty:/usr/bin/false
-_astris:*:245:245:Astris Services:/var/db/astris:/usr/bin/false
-_krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
-_gamecontrollerd:*:247:247:Game Controller Daemon:/var/empty:/usr/bin/false
-_mbsetupuser:*:248:248:Setup User:/var/setup:/bin/bash
-_ondemand:*:249:249:On Demand Resource Daemon:/var/db/ondemand:/usr/bin/false
-_xserverdocs:*:251:251:macOS Server Documents Service:/var/empty:/usr/bin/false
-_wwwproxy:*:252:252:WWW Proxy:/var/empty:/usr/bin/false
-_mobileasset:*:253:253:MobileAsset User:/var/ma:/usr/bin/false
-_findmydevice:*:254:254:Find My Device Daemon:/var/db/findmydevice:/usr/bin/false
-_datadetectors:*:257:257:DataDetectors:/var/db/datadetectors:/usr/bin/false
-_captiveagent:*:258:258:captiveagent:/var/empty:/usr/bin/false
-_ctkd:*:259:259:ctkd Account:/var/empty:/usr/bin/false
-_applepay:*:260:260:applepay Account:/var/db/applepay:/usr/bin/false
-_hidd:*:261:261:HID Service User:/var/db/hidd:/usr/bin/false
-_cmiodalassistants:*:262:262:CoreMedia IO Assistants User:/var/db/cmiodalassistants:/usr/bin/false
-_analyticsd:*:263:263:Analytics Daemon:/var/db/analyticsd:/usr/bin/false
-_fpsd:*:265:265:FPS Daemon:/var/db/fpsd:/usr/bin/false
-_timed:*:266:266:Time Sync Daemon:/var/db/timed:/usr/bin/false
-_nearbyd:*:268:268:Proximity and Ranging Daemon:/var/db/nearbyd:/usr/bin/false
-_reportmemoryexception:*:269:269:ReportMemoryException:/var/db/reportmemoryexception:/usr/bin/false
-_driverkit:*:270:270:DriverKit:/var/empty:/usr/bin/false
-_diskimagesiod:*:271:271:DiskImages IO Daemon:/var/db/diskimagesiod:/usr/bin/false
-_logd:*:272:272:Log Daemon:/var/db/diagnostics:/usr/bin/false
-_appinstalld:*:273:273:App Install Daemon:/var/db/appinstalld:/usr/bin/false
-_installcoordinationd:*:274:274:Install Coordination Daemon:/var/db/installcoordinationd:/usr/bin/false
-_demod:*:275:275:Demo Daemon:/var/empty:/usr/bin/false
-_rmd:*:277:277:Remote Management Daemon:/var/db/rmd:/usr/bin/false
-_accessoryupdater:*:278:278:Accessory Update Daemon:/var/db/accessoryupdater:/usr/bin/false
-_knowledgegraphd:*:279:279:Knowledge Graph Daemon:/var/db/knowledgegraphd:/usr/bin/false
-_coreml:*:280:280:CoreML Services:/var/db/coreml:/usr/bin/false
-_sntpd:*:281:281:SNTP Server Daemon:/var/empty:/usr/bin/false
-_trustd:*:282:282:trustd:/var/empty:/usr/bin/false
-_mmaintenanced:*:283:283:mmaintenanced:/var/db/mmaintenanced:/usr/bin/false
-_darwindaemon:*:284:284:Darwin Daemon:/var/db/darwindaemon:/usr/bin/false
-_notification_proxy:*:285:285:Notification Proxy:/var/empty:/usr/bin/false
-_avphidbridge:*:288:288:Apple Virtual Platform HID Bridge:/var/empty:/usr/bin/false
-_biome:*:289:289:Biome:/var/db/biome:/usr/bin/false
-_backgroundassets:*:291:291:Background Assets Service:/var/empty:/usr/bin/false
-_mobilegestalthelper:*:293:293:MobileGestaltHelper:/var/empty:/usr/bin/false
-_audiomxd:*:294:294:Audio and MediaExperience Daemon:/var/db/audiomxd:/usr/bin/false
-_terminusd:*:295:295:Terminus:/var/db/terminus:/usr/bin/false
-_neuralengine:*:296:296:AppleNeuralEngine:/var/db/neuralengine:/usr/bin/false
-_eligibilityd:*:297:297:OS Eligibility Daemon:/var/db/eligibilityd:/usr/bin/false
-_systemstatusd:*:298:298:SystemStatus Services:/var/empty:/usr/bin/false
-_aonsensed:*:300:300:Always On Sense Daemon:/var/db/aonsensed:/usr/bin/false
-_modelmanagerd:*:301:301:Model Manager:/var/db/modelmanagerd:/usr/bin/false
-_reportsystemmemory:*:302:302:ReportSystemMemory:/var/empty:/usr/bin/false
-_swtransparencyd:*:303:303:Software Transparency Services:/var/db/swtransparencyd:/usr/bin/false
-_naturallanguaged:*:304:304:Natural Language Services:/var/db/com.apple.naturallanguaged:/usr/bin/false
-_corespeechd:*:306:306:CoreSpeech Services:/var/empty:/usr/bin/false
-_diagnosticservicesd:*:307:307:Diagnostic Services:/var/empty:/usr/bin/false
-_oahd:*:441:441:OAH Daemon:/var/empty:/usr/bin/false
+eslaf/nib/rsu/:ytpme/rav/:resU degelivirpnU:2-:2-:*:ydobon
+hs/nib/:toor/rav/:rotartsinimdA metsyS:0:0:*:toor
+eslaf/nib/rsu/:toor/rav/:secivreS metsyS:1:1:*:nomead
+ocicuu/nibs/rsu/:pcuu/loops/rav/:locotorP ypoC xinU ot xinU:4:4:*:pcuu_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD etaG ksaT:31:31:*:detagksat_
+eslaf/nib/rsu/:dkrowten/rav/:secivreS krowteN:42:42:*:dkrowten_
+eslaf/nib/rsu/:ytpme/rav/:tnatsissA llatsnI:52:52:*:tnatsissallatsni_
+eslaf/nib/rsu/:spuc/loops/rav/:secivreS gnitnirP:62:62:*:pl_
+eslaf/nib/rsu/:xiftsop/loops/rav/:revreS liaM xiftsoP:72:72:*:xiftsop_
+eslaf/nib/rsu/:ytpme/rav/:ecivreS noitarugifnoC ecivreS:13:13:*:dscs_
+eslaf/nib/rsu/:ytpme/rav/:ecivreS tnemllornE etacifitreC:23:23:*:sec_
+eslaf/nib/rsu/:erotsppa/bd/rav/:ecivreS erotS ppA caM:33:33:*:erotsppa_
+eslaf/nib/rsu/:ytpme/rav/:hcnuaLppA XCM:45:45:*:rlaxcm_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD stnevEelppA:55:55:*:stneveelppa_
+eslaf/nib/rsu/:doeg/bd/rav/:nomeaD secivreS oeG:65:65:*:doeg_
+eslaf/nib/rsu/:ytpme/rav/:noitatnemucoD repoleveD:95:95:*:scodved_
+eslaf/nib/rsu/:ytpme/rav/:tlebtaeS:06:06:*:xobdnas_
+eslaf/nib/rsu/:ytpme/rav/:rednopseRSNDm:56:56:*:rednopsersndm_
+eslaf/nib/rsu/:ytpme/rav/:potkseD etomeR elppA:76:76:*:dra_
+eslaf/nib/rsu/:revreSbeW/yrarbiL/:revreS beW ediW dlroW:07:07:*:www_
+eslaf/nib/rsu/:ytpme/rav/:resU stnevE elppA:17:17:*:cppe_
+eslaf/nib/rsu/:ytpme/rav/:revreS SVC:27:27:*:svc_
+eslaf/nib/rsu/:ytpme/rav/:revreS NVS:37:37:*:nvs_
+eslaf/nib/rsu/:ytpme/rav/:revreS LQSyM:47:47:*:lqsym_
+eslaf/nib/rsu/:ytpme/rav/:noitarapes egelivirP dhss:57:57:*:dhss_
+eslaf/nib/rsu/:ytpme/rav/:revreS gnimaertS emiTkciuQ:67:67:*:sstq_
+eslaf/nib/rsu/:pami/rav/:rotartsinimdA suryC:6:77:*:suryc_
+eslaf/nib/rsu/:ytpme/rav/:revreS tsiL namliaM:87:87:*:namliam_
+eslaf/nib/rsu/:ytpme/rav/:revreS noitacilppA:97:97:*:revresppa_
+eslaf/nib/rsu/:sliamsuriv/rav/:nomeaD VAmalC:28:28:*:vamalc_
+eslaf/nib/rsu/:sliamsuriv/rav/:nomeaD SiVaMA:38:38:*:dsivama_
+eslaf/nib/rsu/:ytpme/rav/:revreS PPMX rebbaJ:48:48:*:rebbaj_
+eslaf/nib/rsu/:ytpme/rav/:renwO noitacilppA:78:78:*:renwoppa_
+eslaf/nib/rsu/:ytpme/rav/:revreSwodniW:88:88:*:revreswodniw_
+eslaf/nib/rsu/:ytpme/rav/:thgiltopS:98:98:*:thgiltops_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD nekoT:19:19:*:dnekot_
+eslaf/nib/rsu/:tnegaytiruces/bd/rav/:tnegAytiruceS:29:29:*:tnegaytiruces_
+eslaf/nib/rsu/:ytpme/rav/:radnelaC:39:39:*:radnelac_
+eslaf/nib/rsu/:revressmaet/rav/:revreSsmaeT:49:49:*:revressmaet_
+eslaf/nib/rsu/:ytpme/rav/:gnirahS etadpU:2-:59:*:gnirahs_etadpu_
+eslaf/nib/rsu/:ytpme/rav/:rellatsnI:2-:69:*:rellatsni_
+eslaf/nib/rsu/:ytpme/rav/:revreS STA:79:79:*:revressta_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD PTF:2-:89:*:ptf_
+eslaf/nib/rsu/:ytpme/rav/:resU nwonknU:99:99:*:nwonknu_
+eslaf/nib/rsu/:etadpuerawtfos/bd/rav/:ecivreS etadpU erawtfoS:002:002:*:etadpuerawtfos_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD oiduA eroC:202:202:*:doiduaeroc_
+eslaf/nib/rsu/:ytpme/rav/:revasneercS:302:302:*:revasneercs_
+eslaf/nib/rsu/:dnoitacol/bd/rav/:nomeaD noitacoL:502:502:*:dnoitacol_
+eslaf/nib/rsu/:ytpme/rav/:tnegA noitaulavE tsurT:802:802:*:tneganoitaulavetsurt_
+eslaf/nib/rsu/:ytpme/rav/:nomeaDenoZemiTotuA:012:012:*:enozemit_
+eslaf/nib/rsu/:ytpme/rav/:tnegA yrevileD lacoL:112:112:*:adl_
+eslaf/nib/rsu/:ytpme/rav/:tooR SMVC:212:212:*:toorsmvc_
+eslaf/nib/rsu/:nwodkcol/bd/rav/:repleH eciveD SO enohPi:312:312:*:dxumbsu_
+eslaf/nib/rsu/:ytpme/rav/:rotartsinimdA tocevoD:6:412:*:tocevod_
+eslaf/nib/rsu/:ytpme/rav/:oiduA PD:512:512:*:oiduapd_
+eslaf/nib/rsu/:ytpme/rav/:revreS LQSergtsoP:612:612:*:sergtsop_
+eslaf/nib/rsu/:ytpme/rav/:tekciT gnitnarG tekciT sorebreK:2-:712:*:tgtbrk_
+eslaf/nib/rsu/:ytpme/rav/:ecivreS nimdA sorebreK:2-:812:*:nimda_nimdak_
+eslaf/nib/rsu/:ytpme/rav/:ecivreS drowssaP egnahC sorebreK:2-:912:*:wpegnahc_nimdak_
+eslaf/nib/rsu/:ytpme/rav/:revreS tnemeganaM eciveD:022:022:*:rgmecived_
+eslaf/nib/rsu/:ytpme/rav/:revreS htuA beW:122:122:*:revreshtuabew_
+eslaf/nib/rsu/:ytpme/rav/:SOIBteN:222:222:*:soibten_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD mraW:422:422:*:dmraw_
+eslaf/nib/rsu/:ytpme/rav/:noitacitnehtuA tocevoD:722:722:*:llunevod_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD scitsitatS krowteN:822:822:*:scitsitatsten_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD eciveD BVA tenrehtE:2-:922:*:decivedbva_
+eslaf/nib/rsu/:ytpme/rav/:tekciT gnitnarG tekciT sorebreK yrotceriD nepO:2-:032:*:tgtbrk_brk_
+eslaf/nib/rsu/:ytpme/rav/:ecivreS nimdA sorebreK yrotceriD nepO:2-:132:*:nimdak_brk_
+eslaf/nib/rsu/:ytpme/rav/:ecivreS drowssaP egnahC sorebreK yrotceriD nepO:2-:232:*:wpegnahc_brk_
+eslaf/nib/rsu/:ytpme/rav/:sorebreK yrotceriD nepO:2-:332:*:sorebrek_brk_
+eslaf/nib/rsu/:ytpme/rav/:suomynonA sorebreK yrotceriD nepO:2-:432:*:suomynona_brk_
+eslaf/nib/rsu/:ytpme/rav/:ecivreS ehcaC tessA:532:532:*:ehcactessa_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD OI aideM eroC:632:632:*:doiaidemeroc_
+eslaf/nib/rsu/:ytpme/rav/:dsecivreshcnual_:932:932:*:dsecivreshcnual_
+eslaf/nib/rsu/:ytpme/rav/:secivreSnocI:042:042:*:secivresnoci_
+eslaf/nib/rsu/:ytpme/rav/:etoNtsiD:142:142:*:etontsid_
+eslaf/nib/rsu/:dnoisseslrusn/bd/rav/:nomeaD noisseSLRUSN:242:242:*:dnoisseslrusn_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD yciloP yalpsiD:442:442:*:dycilopyalpsid_
+eslaf/nib/rsu/:sirtsa/bd/rav/:secivreS sirtsA:542:542:*:sirtsa_
+eslaf/nib/rsu/:ytpme/rav/:tnuoccA TSAF sorebreK:2-:642:*:tsafbrk_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD rellortnoC emaG:742:742:*:drellortnocemag_
+hsab/nib/:putes/rav/:resU puteS:842:842:*:resuputesbm_
+eslaf/nib/rsu/:dnamedno/bd/rav/:nomeaD ecruoseR dnameD nO:942:942:*:dnamedno_
+eslaf/nib/rsu/:ytpme/rav/:ecivreS stnemucoD revreS SOcam:152:152:*:scodrevresx_
+eslaf/nib/rsu/:ytpme/rav/:yxorP WWW:252:252:*:yxorpwww_
+eslaf/nib/rsu/:am/rav/:resU tessAeliboM:352:352:*:tessaelibom_
+eslaf/nib/rsu/:ecivedymdnif/bd/rav/:nomeaD eciveD yM dniF:452:452:*:ecivedymdnif_
+eslaf/nib/rsu/:srotcetedatad/bd/rav/:srotceteDataD:752:752:*:srotcetedatad_
+eslaf/nib/rsu/:ytpme/rav/:tnegaevitpac:852:852:*:tnegaevitpac_
+eslaf/nib/rsu/:ytpme/rav/:tnuoccA dktc:952:952:*:dktc_
+eslaf/nib/rsu/:yapelppa/bd/rav/:tnuoccA yapelppa:062:062:*:yapelppa_
+eslaf/nib/rsu/:ddih/bd/rav/:resU ecivreS DIH:162:162:*:ddih_
+eslaf/nib/rsu/:stnatsissaladoimc/bd/rav/:resU stnatsissA OI aideMeroC:262:262:*:stnatsissaladoimc_
+eslaf/nib/rsu/:dscitylana/bd/rav/:nomeaD scitylanA:362:362:*:dscitylana_
+eslaf/nib/rsu/:dspf/bd/rav/:nomeaD SPF:562:562:*:dspf_
+eslaf/nib/rsu/:demit/bd/rav/:nomeaD cnyS emiT:662:662:*:demit_
+eslaf/nib/rsu/:dybraen/bd/rav/:nomeaD gnignaR dna ytimixorP:862:862:*:dybraen_
+eslaf/nib/rsu/:noitpecxeyromemtroper/bd/rav/:noitpecxEyromeMtropeR:962:962:*:noitpecxeyromemtroper_
+eslaf/nib/rsu/:ytpme/rav/:tiKrevirD:072:072:*:tikrevird_
+eslaf/nib/rsu/:doisegamiksid/bd/rav/:nomeaD OI segamIksiD:172:172:*:doisegamiksid_
+eslaf/nib/rsu/:scitsongaid/bd/rav/:nomeaD goL:272:272:*:dgol_
+eslaf/nib/rsu/:dllatsnippa/bd/rav/:nomeaD llatsnI ppA:372:372:*:dllatsnippa_
+eslaf/nib/rsu/:dnoitanidroocllatsni/bd/rav/:nomeaD noitanidrooC llatsnI:472:472:*:dnoitanidroocllatsni_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD omeD:572:572:*:domed_
+eslaf/nib/rsu/:dmr/bd/rav/:nomeaD tnemeganaM etomeR:772:772:*:dmr_
+eslaf/nib/rsu/:retadpuyrossecca/bd/rav/:nomeaD etadpU yrosseccA:872:872:*:retadpuyrossecca_
+eslaf/nib/rsu/:dhpargegdelwonk/bd/rav/:nomeaD hparG egdelwonK:972:972:*:dhpargegdelwonk_
+eslaf/nib/rsu/:lmeroc/bd/rav/:secivreS LMeroC:082:082:*:lmeroc_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD revreS PTNS:182:182:*:dptns_
+eslaf/nib/rsu/:ytpme/rav/:dtsurt:282:282:*:dtsurt_
+eslaf/nib/rsu/:decnanetniamm/bd/rav/:decnanetniamm:382:382:*:decnanetniamm_
+eslaf/nib/rsu/:nomeadniwrad/bd/rav/:nomeaD niwraD:482:482:*:nomeadniwrad_
+eslaf/nib/rsu/:ytpme/rav/:yxorP noitacifitoN:582:582:*:yxorp_noitacifiton_
+eslaf/nib/rsu/:ytpme/rav/:egdirB DIH mroftalP lautriV elppA:882:882:*:egdirbdihpva_
+eslaf/nib/rsu/:emoib/bd/rav/:emoiB:982:982:*:emoib_
+eslaf/nib/rsu/:ytpme/rav/:ecivreS stessA dnuorgkcaB:192:192:*:stessadnuorgkcab_
+eslaf/nib/rsu/:ytpme/rav/:repleHtlatseGeliboM:392:392:*:replehtlatsegelibom_
+eslaf/nib/rsu/:dxmoidua/bd/rav/:nomeaD ecneirepxEaideM dna oiduA:492:492:*:dxmoidua_
+eslaf/nib/rsu/:sunimret/bd/rav/:sunimreT:592:592:*:dsunimret_
+eslaf/nib/rsu/:enignelaruen/bd/rav/:enignElarueNelppA:692:692:*:enignelaruen_
+eslaf/nib/rsu/:dytilibigile/bd/rav/:nomeaD ytilibigilE SO:792:792:*:dytilibigile_
+eslaf/nib/rsu/:ytpme/rav/:secivreS sutatSmetsyS:892:892:*:dsutatsmetsys_
+eslaf/nib/rsu/:desnesnoa/bd/rav/:nomeaD esneS nO syawlA:003:003:*:desnesnoa_
+eslaf/nib/rsu/:dreganamledom/bd/rav/:reganaM ledoM:103:103:*:dreganamledom_
+eslaf/nib/rsu/:ytpme/rav/:yromeMmetsyStropeR:203:203:*:yromemmetsystroper_
+eslaf/nib/rsu/:dycnerapsnartws/bd/rav/:secivreS ycnerapsnarT erawtfoS:303:303:*:dycnerapsnartws_
+eslaf/nib/rsu/:degaugnallarutan.elppa.moc/bd/rav/:secivreS egaugnaL larutaN:403:403:*:degaugnallarutan_
+eslaf/nib/rsu/:ytpme/rav/:secivreS hceepSeroC:603:603:*:dhceepseroc_
+eslaf/nib/rsu/:ytpme/rav/:secivreS citsongaiD:703:703:*:dsecivrescitsongaid_
+eslaf/nib/rsu/:ytpme/rav/:nomeaD HAO:144:144:*:dhao_

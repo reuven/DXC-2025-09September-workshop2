@@ -24,4 +24,4 @@ if args.outfile is None:
 
 with args.infile as i, args.outfile as o:
     for one_line in i:
-        o.write(one_line)
+        o.write(one_line[::-1])
