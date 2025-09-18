@@ -17,12 +17,13 @@ counts = {'lines':0,
           'words':0,
           'chars':0}
 
-for one_line in args.file:
-    counts['lines'] += 1
-    counts['chars'] += len(one_line)          # count characters in the line
-    counts['words'] += len(one_line.split())  # break the line into words, and count them
+with args.file:
+    for one_line in args.file:
+        counts['lines'] += 1
+        counts['chars'] += len(one_line)          # count characters in the line
+        counts['words'] += len(one_line.split())  # break the line into words, and count them
 
-args.file.close()
+# args.file.close()
 
 for key, value in counts.items():
     print(f'{key}:{value}')
