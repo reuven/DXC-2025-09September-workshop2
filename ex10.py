@@ -63,6 +63,7 @@ if __name__ == '__main__':
         print(f'{numbers[0]} ** 2 = {result}')
 
     # Calculator.do_square = square
-    setattr(Calculator, 'do_square', square)
+    # setattr(Calculator, 'do_square', square)
+    setattr(Calculator, 'do_square', lambda self, line: print(f'{self.line_to_numbers(line)[0] ** 2}'))
 
     Calculator().cmdloop()
