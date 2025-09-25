@@ -6,5 +6,8 @@ class MyCmd(cmd.Cmd):
     def do_say(self, line):
         print(f'I am saying: {line}')
 
+    def do_EOF(self, line):
+        return True
+
 if __name__ == '__main__':
     MyCmd().cmdloop()
