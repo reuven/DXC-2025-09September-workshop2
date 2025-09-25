@@ -3,7 +3,7 @@
 import cmd
 
 class Calculator(cmd.Cmd):
-    def line_to_numbers(line):
+    def line_to_numbers(self, line):
         numbers = [int(one_number)
                    for one_number in line.split()]
         print(f'{numbers=}')
