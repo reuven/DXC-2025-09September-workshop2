@@ -2,7 +2,7 @@
 
 import cmd
 
-class MyCmd(cmd.Cmd):
+class Calculator(cmd.Cmd):
     def do_say(self, line):
         print(f'I am saying: {line}')
 
@@ -15,4 +15,4 @@ class MyCmd(cmd.Cmd):
         return True
 
 if __name__ == '__main__':
-    MyCmd().cmdloop()
+    Calculator().cmdloop()
