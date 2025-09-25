@@ -10,5 +10,9 @@ class MyCmd(cmd.Cmd):
         print('Goodbye!')
         return True
 
+    def do_exit(self, line):
+        print('Goodbye, normal person!')
+        return True
+
 if __name__ == '__main__':
     MyCmd().cmdloop()
