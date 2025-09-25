@@ -3,7 +3,8 @@
 import cmd
 
 class MyCmd(cmd.Cmd):
-    pass
+    def do_say(self, line):
+        print(f'Hello, {line}')
 
 if __name__ == '__main__':
     MyCmd().cmdloop()
