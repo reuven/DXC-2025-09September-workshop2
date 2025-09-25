@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import cmd
+import extension_commands
 
 class MyCmd(cmd.Cmd):
     def capitalize(self, line):
