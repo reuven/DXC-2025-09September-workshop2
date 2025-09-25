@@ -20,7 +20,7 @@ class Calculator(cmd.Cmd):
     def do_mul(self, line):
         numbers = [int(one_number)
                    for one_number in line.split()]
-        print(f'div, {line=}, {numbers=}')
+        print(f'mul, {line=}, {numbers=}')
         result = numbers[0] * numbers[1]
         print(f'{numbers[0]} * {numbers[1]} = {result}')
 
