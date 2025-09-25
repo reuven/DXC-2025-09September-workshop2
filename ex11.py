@@ -67,6 +67,7 @@ if __name__ == '__main__':
     # setattr(Calculator, 'do_square', square)
     setattr(Calculator, 'do_square', lambda self, line: print(f'{self.line_to_numbers(line)[0] ** 2}'))
 
-    setattr(Calculator, 'do_cube', calc_extensions.cube)
+    for one_function in ['cube']:
+        setattr(Calculator, f'do_{one_function}', getattr(calc_extensions, one_function))
 
     Calculator().cmdloop()
