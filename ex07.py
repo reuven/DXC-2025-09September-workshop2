@@ -4,10 +4,10 @@ import cmd
 
 class Calculator(cmd.Cmd):
     def do_add(self, line):
-        print('add, {line=}')
+        print(f'add, {line=}')
 
     def do_sub(self, line):
-        print('sub, {line=}')
+        print(f'sub, {line=}')
 
     def do_EOF(self, line):
         print('Goodbye!')
