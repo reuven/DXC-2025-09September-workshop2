@@ -8,6 +8,7 @@ class Calculator(cmd.Cmd):
                    for one_number in line.split()]
         print(f'add, {line=}, {numbers=}')
         result = sum(numbers)
+        print(f'{numbers[0]} + {numbers[1]} = {result}')
 
     def do_sub(self, line):
         print(f'sub, {line=}')
