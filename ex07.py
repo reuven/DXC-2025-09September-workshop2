@@ -15,7 +15,7 @@ class Calculator(cmd.Cmd):
                    for one_number in line.split()]
         print(f'sub, {line=}, {numbers=}')
         result = numbers[0] - numbers[1]
-        print(f'{numbers[0]} + {numbers[1]} = {result}')
+        print(f'{numbers[0]} - {numbers[1]} = {result}')
 
 
     def do_EOF(self, line):
