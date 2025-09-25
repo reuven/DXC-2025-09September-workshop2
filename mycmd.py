@@ -38,4 +38,6 @@ if __name__ == '__main__':
     # MyCmd.do_yell = yell
     setattr(MyCmd, 'do_yell', yell)
 
+    setattr(MyCmd, 'do_say_with_stars', extension_commands.say_with_stars)
+
     MyCmd().cmdloop()
