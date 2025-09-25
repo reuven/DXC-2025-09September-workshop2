@@ -61,6 +61,7 @@ if __name__ == '__main__':
         numbers = self.line_to_numbers(line)
         result = numbers[0] ** 2
         print(f'{numbers[0]} ** 2 = {result}')
-    Calculator.do_square = square
+    # Calculator.do_square = square
+    setattr(Calculator, 'do_square', square)
 
     Calculator().cmdloop()
