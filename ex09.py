@@ -16,6 +16,10 @@ class Calculator(cmd.Cmd):
                '/':'div'}
 
         parts = line.split()
+        if parts[0] in ops:
+            parts[0] = ops[parts[0]]
+
+        return ' '.join(parts)
 
     def do_add(self, line):
         """Add two numbers"""
