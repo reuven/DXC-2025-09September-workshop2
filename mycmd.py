@@ -7,6 +7,7 @@ class MyCmd(cmd.Cmd):
         print(f'I am saying: {line}')
 
     def do_EOF(self, line):
+        print('Goodbye!')
         return True
 
 if __name__ == '__main__':
