@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import cmd
+import calc_extensions
 
 class Calculator(cmd.Cmd):
     def line_to_numbers(self, line):
