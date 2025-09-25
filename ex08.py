@@ -14,23 +14,17 @@ class Calculator(cmd.Cmd):
         print(f'{numbers[0]} + {numbers[1]} = {result}')
 
     def do_sub(self, line):
-        numbers = [int(one_number)
-                   for one_number in line.split()]
-        print(f'sub, {line=}, {numbers=}')
+        numbers = self.line_to_numbers(line)
         result = numbers[0] - numbers[1]
         print(f'{numbers[0]} - {numbers[1]} = {result}')
 
     def do_mul(self, line):
-        numbers = [int(one_number)
-                   for one_number in line.split()]
-        print(f'mul, {line=}, {numbers=}')
+        numbers = self.line_to_numbers(line)
         result = numbers[0] * numbers[1]
         print(f'{numbers[0]} * {numbers[1]} = {result}')
 
     def do_div(self, line):
-        numbers = [int(one_number)
-                   for one_number in line.split()]
-        print(f'div, {line=}, {numbers=}')
+        numbers = self.line_to_numbers(line)
         result = numbers[0] / numbers[1]
         print(f'{numbers[0]} / {numbers[1]} = {result}')
 
