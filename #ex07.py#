@@ -3,8 +3,6 @@
 import cmd
 
 class Calculator(cmd.Cmd):
-    def do_add(self, line):
-        print('{line=}')
 
 
     def do_EOF(self, line):
