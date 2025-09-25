@@ -5,7 +5,6 @@ import cmd
 class MyCmd(cmd.Cmd):
     def do_say(self, line):
         print(f'I am saying: {line}')
-        return True
 
     def do_EOF(self, line):
         print('Goodbye!')
