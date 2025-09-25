@@ -4,7 +4,10 @@ import cmd
 
 class Calculator(cmd.Cmd):
     def do_add(self, line):
-        print('{line=}')
+        print('add, {line=}')
+
+    def do_sub(self, line):
+        print('sub, {line=}')
 
 
     def do_EOF(self, line):
