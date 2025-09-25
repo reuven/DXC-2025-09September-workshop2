@@ -9,7 +9,6 @@ class Calculator(cmd.Cmd):
     def do_sub(self, line):
         print('sub, {line=}')
 
-
     def do_EOF(self, line):
         print('Goodbye!')
         return True
