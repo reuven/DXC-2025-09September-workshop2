@@ -7,6 +7,7 @@ class Calculator(cmd.Cmd):
         numbers = [int(one_number)
                    for one_number in line.split()]
         print(f'add, {line=}, {numbers=}')
+        result = sum(numbers)
 
     def do_sub(self, line):
         print(f'sub, {line=}')
