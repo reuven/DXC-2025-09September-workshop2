@@ -10,14 +10,14 @@ class MyCmd(cmd.Cmd):
         if line == 'EOF':
             return line
 
-        parts = line.split()  # turn it into a list of strings
+        parts = line.split()    # turn it into a list of strings
         parts[0] = parts[0].lower()
 
         return ' '.join(parts)
 
     def do_say(self, line):
         """Say something to the user"""
-        print(f'I am saying: {self.capitalize(line)}')
+        print(f'I am saying: {line}')
 
     def do_EOF(self, line):
         """quit"""
