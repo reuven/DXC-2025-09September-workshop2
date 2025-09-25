@@ -34,10 +34,12 @@ class Calculator(cmd.Cmd):
         print(f'{numbers[0]} / {numbers[1]} = {result}')
 
     def do_EOF(self, line):
+        """Quit like a Unix geek"""
         print('Goodbye!')
         return True
 
     def do_exit(self, line):
+        """Quit like a normal person"""
         print('Goodbye, normal person!')
         return True
 
