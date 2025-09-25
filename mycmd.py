@@ -7,7 +7,9 @@ class MyCmd(cmd.Cmd):
         return line.capitalize()
 
     def precmd(self, line):
-        print(f'precmd, {line=}')
+        if line == 'EOF':
+            return line
+
         return line.lower()
 
     def do_say(self, line):
