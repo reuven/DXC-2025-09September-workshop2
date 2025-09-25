@@ -6,6 +6,9 @@ class MyCmd(cmd.Cmd):
     def capitalize(self, line):
         return line.capitalize()
 
+    def precmd(self, line):
+        return line.lower()
+
     def do_say(self, line):
         """Say something to the user"""
         print(f'I am saying: {self.capitalize(line)}')
