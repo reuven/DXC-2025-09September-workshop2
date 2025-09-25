@@ -71,7 +71,7 @@ if __name__ == '__main__':
         one_function = getattr(calc_extensions, function_name)
 
         if callable(one_function):
-        print(f'{one_function=}')
-        setattr(Calculator, f'do_{one_function}', getattr(calc_extensions, one_function))
+            print(f'{one_function=}')
+            setattr(Calculator, f'do_{one_function}', getattr(calc_extensions, one_function))
 
     Calculator().cmdloop()
