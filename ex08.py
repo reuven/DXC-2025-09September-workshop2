@@ -4,8 +4,10 @@ import cmd
 
 class Calculator(cmd.Cmd):
     def line_to_numbers(line):
-        return [int(one_number)
-                for one_number in line.split()]
+        numbers = [int(one_number)
+                   for one_number in line.split()]
+        print(f'{numbers=}')
+        return numbers
 
     def do_add(self, line):
         numbers = self.line_to_numbers(line)
