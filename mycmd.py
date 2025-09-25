@@ -7,7 +7,8 @@ class MyCmd(cmd.Cmd):
         return line.capitalize()
 
     def precmd(self, line):
-        return line.lower()
+        if line != 'EOF':
+            return line.lower()
 
     def do_say(self, line):
         """Say something to the user"""
