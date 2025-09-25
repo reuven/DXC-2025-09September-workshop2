@@ -72,6 +72,6 @@ if __name__ == '__main__':
 
         if callable(one_function):
             print(f'{function_name=}')
-            setattr(Calculator, f'do_{one_function}', one_function)
+            setattr(Calculator, f'do_{function_name}', one_function)
 
     Calculator().cmdloop()
