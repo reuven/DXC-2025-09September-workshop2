@@ -33,6 +33,8 @@ if __name__ == '__main__':
     def yell(self, line):
         """Yell at the user"""
         print(f'I am yelling: {line.upper()}!!!')
-    MyCmd.do_yell = yell
+
+    # MyCmd.do_yell = yell
+    setattr(MyCmd, 'do_yell', yell)
 
     MyCmd().cmdloop()
