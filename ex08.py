@@ -9,7 +9,6 @@ class Calculator(cmd.Cmd):
 
     def do_add(self, line):
         numbers = self.line_to_numbers(line)
-        print(f'add, {line=}, {numbers=}')
         result = numbers[0] + numbers[1]
         print(f'{numbers[0]} + {numbers[1]} = {result}')
 
