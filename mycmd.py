@@ -3,6 +3,9 @@
 import cmd
 
 class MyCmd(cmd.Cmd):
+    def capitalize(self, line):
+        return line.capitalize()
+
     def do_say(self, line):
         """Say something to the user"""
         print(f'I am saying: {line}')
